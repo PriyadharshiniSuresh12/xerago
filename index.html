@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xerago - Digital Marketing Intelligence</title>
+
+    <meta name="description" content="Xerago drives intelligence-driven digital marketing for global brands with consulting, enablement, operations, and managed services.">
+    <meta name="keywords" content="digital marketing, marketing intelligence, martech, digital transformation, consulting, managed services, Chennai, India, jobs, careers, about us, contact us">
+    <meta name="author" content="Xerago">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/index.html">
+
+    <!-- External fonts or libraries (linked directly) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- === INLINE CSS - ALL STYLES HERE === -->
+    <style>
+        /* Basic Resets & Global Styles */
+        :root {
+            --primary-color: #26aa50; /* A vibrant blue for primary actions */
+            --secondary-color: #6c757d; /* A neutral gray */
+            --dark-color: #343a40; /* Dark text/backgrounds */
+            --light-color: #f8f9fa; /* Light backgrounds */
+            --text-color: #495057; /* General text color */
+            --heading-color: #212529; /* Heading text color */
+            --border-color: #dee2e6; /* For borders, lines */
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth; /* Smooth scroll for anchor links */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.8rem; }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #26aa50; /* Darker primary on hover */
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #26aa50;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .btn-large {
+            padding: 15px 35px;
+            font-size: 1.1rem;
+        }
+
+        /* Text Alignment */
+        .text-center {
+            text-align: center;
+        }
+
+        /* Margin Utilities */
+        .mt-8 {
+            margin-top: 4rem; /* For spacing sections */
+        }
+
+        /* Header & Navigation */
+        .main-header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-header .logo img {
+            height: 50px; /* Adjust as needed */
+        }
+
+        .main-nav ul {
+            display: flex;
+        }
+
+        .main-nav ul li {
+            margin-left: 30px;
+        }
+
+        .main-nav ul li a {
+            color: var(--dark-color);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .main-nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease;
+        }
+
+        .main-nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger-menu {
+            display: none; /* Hidden on desktop */
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--dark-color);
+        }
+
+        /* Hero Section (Home Page) */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero-bg.jpg') no-repeat center center/cover; /* Placeholder background */
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            min-height: 60vh;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.5;
+        }
+
+        .hero-cta-buttons .btn {
+            margin: 10px;
+        }
+
+        /* Page Hero Section (for Services, Insights, etc.) */
+        .page-hero-section {
+            background: linear-gradient(135deg, var(--primary-color), #26aa50); /* Blue gradient */
+            color: var(--white);
+            text-align: center;
+            padding: 120px 0 80px 0; /* Adjusted padding for inner page hero */
+            margin-top: 70px; /* Space for fixed header */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-hero-section h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .page-hero-section p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+
+        /* Generic Section Styles */
+        section {
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden; /* For animations */
+        }
+
+        section:nth-child(odd) { /* Apply to sections 1, 3, 5... */
+            background-color: #fff;
+        }
+
+        section:nth-child(even) { /* Apply to sections 2, 4, 6... */
+            background-color: var(--light-color);
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            color: var(--secondary-color);
+        }
+
+        /* Grid Layouts for Cards */
+        .service-cards-grid,
+        .differentiator-points-grid,
+        .case-study-cards-grid,
+        .insight-cards-grid,
+        .job-cards-grid,
+        .team-cards-grid,
+        .contact-grid {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        /* Service Card (Home Page) */
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .service-card .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Differentiator Item (Home & About Page) */
+        .differentiator-item {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .differentiator-item .differentiator-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .differentiator-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Case Study Card & Insight Card (Home & Specific Pages) */
+        .case-study-card, .insight-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .case-study-card:hover, .insight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .case-study-card img, .insight-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .case-study-card .card-content, .insight-card .card-content {
+            padding: 25px;
+        }
+
+        .case-study-card h3, .insight-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .insight-card span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Job Card (Home & Job Vacancy Page) */
+        .job-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .job-card h3 {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .job-details {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .job-details i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+        .job-card h4 {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        .job-card ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .job-card ul li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        .job-apply p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        /* Team Member Card (About Us Page) */
+        .team-member-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .team-member-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .team-member-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        .team-member-card p {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        .team-member-card .fab {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+        .team-member-card .fab:hover {
+            color: #26aa50;
+        }
+
+        /* Contact Page Specific */
+        .contact-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .contact-item .contact-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .contact-form {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--heading-color);
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+            outline: none;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .map-section .map-placeholder iframe {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+
+        /* Call to Action Section */
+        .cta-section {
+            background-color: var(--dark-color);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta-section h2 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        /* Footer */
+        .main-footer {
+            background-color: var(--heading-color);
+            color: #a0a0a0;
+            padding: 50px 0 20px;
+            font-size: 0.9rem;
+        }
+
+        .main-footer .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h3.logo img {
+            height: 40px; /* Adjust based on your logo size */
+            filter: brightness(0) invert(1); /* Makes a dark logo white on dark background */
+            margin-bottom: 15px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #a0a0a0;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+        /* Chatbot Styles */
+        .chatbot-toggle-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            z-index: 2000;
+        }
+
+        .chatbot-toggle-button:hover {
+            background-color: #00b31e;
+            transform: scale(1.05);
+        }
+
+        .chatbot-window {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            height: 450px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transform: scale(0); /* Initially hidden */
+            transform-origin: bottom right;
+            transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            z-index: 1999;
+        }
+
+        .chatbot-window.active {
+            transform: scale(1);
+        }
+
+        .chatbot-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-primary);
+        }
+
+        .chatbot-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .chatbot-close-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.3rem;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .chatbot-messages {
+            flex-grow: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .message {
+            padding: 10px 15px;
+            border-radius: 18px;
+            margin-bottom: 10px;
+            max-width: 80%;
+            line-height: 1.4;
+            font-size: 0.9rem;
+        }
+
+        .user-message {
+            background-color: #e0f2fe; /* Light blue */
+            color: var(--dark-color);
+            align-self: flex-end;
+            margin-left: auto;
+            border-bottom-right-radius: 2px;
+        }
+
+        .bot-message {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            align-self: flex-start;
+            margin-right: auto;
+            border-bottom-left-radius: 2px;
+        }
+
+        .chatbot-input {
+            display: flex;
+            padding: 10px 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .chatbot-input input {
+            flex-grow: 1;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .chatbot-input button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .chatbot-input button:hover {
+            background-color: #26aa50;
+        }
+
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .fade-in-up.show {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-delay-1 { animation-delay: 0.2s; }
+        .animate-delay-2 { animation-delay: 0.4s; }
+        .animate-delay-3 { animation-delay: 0.6s; }
+        /* Add more delays if needed */
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .main-nav {
+                /* Hide nav by default on smaller screens */
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 70px; /* Adjust based on header height */
+                left: 0;
+                background-color: #fff;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                padding: 20px 0;
+                z-index: 999;
+            }
+
+            .main-nav.active {
+                display: flex; /* Show when active */
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .main-nav ul li {
+                margin: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .main-nav ul li a {
+                display: block;
+                padding: 15px 0;
+                border-bottom: 1px solid var(--light-color);
+                width: 100%;
+            }
+            .main-nav ul li:last-child a {
+                border-bottom: none;
+            }
+
+            .main-nav ul li a::after {
+                display: none; /* Hide hover effect on mobile */
+            }
+
+            .hamburger-menu {
+                display: block; /* Show hamburger on smaller screens */
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.4rem; }
+
+            .hero-section {
+                padding: 80px 0;
+                min-height: 50vh;
+            }
+            .page-hero-section {
+                padding: 80px 0 50px 0;
+            }
+
+            .service-cards-grid,
+            .differentiator-points-grid,
+            .case-study-cards-grid,
+            .insight-cards-grid,
+            .job-cards-grid,
+            .team-cards-grid,
+            .contact-grid {
+                grid-template-columns: 1fr; /* Stack columns on very small screens */
+            }
+
+            .main-footer .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-col h3.logo img {
+                margin: 0 auto 15px;
+            }
+            .social-links {
+                justify-content: center;
+                display: flex;
+            }
+
+            .chatbot-window {
+                width: 90%;
+                right: 5%;
+                bottom: 80px; /* Adjust to be above button */
+                height: 70vh; /* Make it take more screen height */
+            }
+            .chatbot-toggle-button {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#home-section" class="logo">
+                <img src="WhatsApp_Image_2025-06-05_at_12.28.44_13c16ceb-removebg-preview.png" alt="Xerago Logo">
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#services-page-section">Services</a></li>
+                    <li><a href="#insights-page-section">Insights</a></li>
+                    <li><a href="#case-studies-page-section">Case Studies</a></li>
+                    <li><a href="#job-vacancy-page-section">Job Vacancy</a></li>
+                    <li><a href="#about-page-section">About Us</a></li>
+                    <li><a href="#contact-page-section">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Home Page Content -->
+        <section class="hero-section" id="home-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="fade-in-up animate-delay-1">Drive Digital Marketing Intelligence with Xerago</h1>
+                    <p class="fade-in-up animate-delay-2">Transforming data into decisive action for mid-market and enterprise brands across 5 continents.</p>
+                    <div class="hero-cta-buttons fade-in-up animate-delay-3">
+                        <a href="#services-page-section" class="btn btn-primary btn-large">Our Services</a>
+                        <a href="#contact-page-section" class="btn btn-outline btn-large">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Showcase Section (Placeholder) -->
+        <section class="client-showcase-section">
+            <div class="container text-center">
+                <h2 class="animate-on-scroll">Trusted by Global Leaders</h2>
+                <p class="section-description animate-on-scroll animate-delay-1">We partner with top brands to achieve their digital marketing objectives.</p>
+            </div>
+        </section>
+
+        <!-- Services Overview Section (Home Page) -->
+        <section class="services-overview-section">
+            <div class="container text-center">
+                <h2 class="animate-on-scroll">How We Empower Your Digital Growth</h2>
+                <p class="section-description animate-on-scroll animate-delay-1">Xerago provides end-to-end digital marketing solutions tailored to your needs.</p>
+                <div class="service-cards-grid">
+                    <div class="service-card animate-on-scroll animate-delay-2">
+                        <i class="fas fa-cogs service-icon"></i>
+                        <h3>Consulting & Advisory</h3>
+                        <p>Strategic guidance in Data & AI, MarTech, and CX to define your digital roadmap.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll animate-delay-3">
+                        <i class="fas fa-rocket service-icon"></i>
+                        <h3>Enablement Solutions</h3>
+                        <p>Building robust foundations with technology integration and custom app development.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll animate-delay-4">
+                        <i class="fas fa-users service-icon"></i>
+                        <h3>Operations & Augmentation</h3>
+                        <p>Enhancing your internal capabilities by augmenting your teams with specialized experts.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll animate-delay-5">
+                        <i class="fas fa-handshake service-icon"></i>
+                        <h3>Managed Services</h3>
+                        <p>Comprehensive, hands-off management of your digital marketing priorities.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-8 animate-on-scroll">
+                    <a href="#services-page-section" class="btn btn-primary btn-large">Explore All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us-section">
+            <div class="container text-center">
+                <h2 class="animate-on-scroll">Why Choose Xerago?</h2>
+                <p class="section-description animate-on-scroll animate-delay-1">Our unique approach and proven track record set us apart.</p>
+                <div class="differentiator-points-grid">
+                    <div class="differentiator-item animate-on-scroll animate-delay-2">
+                        <i class="fas fa-database differentiator-icon"></i>
+                        <h3>Data-Driven Intelligence</h3>
+                        <p>Every strategy is backed by deep analytics and actionable insights for optimal performance.</p>
+                    </div>
+                    <div class="differentiator-item animate-on-scroll animate-delay-3">
+                        <i class="fas fa-globe differentiator-icon"></i>
+                        <h3>Global Expertise</h3>
+                        <p>Serving diverse markets across five continents with localized and global strategies.</p>
+                    </div>
+                    <div class="differentiator-item animate-on-scroll animate-delay-4">
+                        <i class="fas fa-award differentiator-icon"></i>
+                        <h3>Proven Track Record</h3>
+                        <p>Years of success helping mid-market to enterprise brands achieve significant ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Preview Section (Home Page) -->
+        <section class="case-studies-preview-section">
+            <div class="container text-center">
+                <h2 class="animate-on-scroll">Our Impactful Case Studies</h2>
+                <p class="section-description animate-on-scroll animate-delay-1">See how our strategies deliver tangible results for our clients.</p>
+                <div class="case-study-cards-grid">
+                    <div class="case-study-card animate-on-scroll animate-delay-2">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/case-study-auto.jpg" alt="Automotive Case Study"> -->
+                        <div class="card-content">
+                            <h3>Automotive Giant Drives 30% ROAS Increase</h3>
+                            <p>Implemented an intelligent performance marketing strategy, leading to significant returns on ad spend and increased vehicle sales.</p>
+                            <a href="#case-studies-page-section" class="read-more">View Case Study <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="case-study-card animate-on-scroll animate-delay-3">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/case-study-health.jpg" alt="Healthcare Case Study"> -->
+                        <div class="card-content">
+                            <h3>Healthcare Provider Boosts Patient Engagement by 25%</h3>
+                            <p>Reinvented patient experience through a unified digital presence and personalized communication campaigns across channels.</p>
+                            <a href="#case-studies-page-section" class="read-more">View Case Study <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8 animate-on-scroll">
+                    <a href="#case-studies-page-section" class="btn btn-primary btn-large">View All Case Studies</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Preview Section (Home Page) -->
+        <section class="insights-preview-section">
+            <div class="container text-center">
+                <h2 class="animate-on-scroll">Latest Insights & Xtelligence</h2>
+                <p class="section-description animate-on-scroll animate-delay-1">Stay updated with our thought leadership, industry trends, and expert analyses.</p>
+                <div class="insight-cards-grid">
+                    <div class="insight-card animate-on-scroll animate-delay-2">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/ai-marketing.jpg" alt="AI in Marketing"> -->
+                        <div class="card-content">
+                            <span>Marketing Automation</span>
+                            <h3>The Future of AI in Digital Marketing 2025</h3>
+                            <p>Explore how artificial intelligence is reshaping campaigns and customer journeys.</p>
+                            <a href="#insights-page-section" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="insight-card animate-on-scroll animate-delay-3">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/headless-cms.jpg" alt="Headless CMS"> -->
+                        <div class="card-content">
+                            <span>MarTech</span>
+                            <h3>Headless CMS: The Power Behind Modern Websites</h3>
+                            <p>Understand why headless architectures are critical for scalable digital experiences.</p>
+                            <a href="#insights-page-section" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8 animate-on-scroll">
+                    <a href="#insights-page-section" class="btn btn-primary btn-large">Explore All Insights</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section (Home Page) -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Transform Your Digital Marketing?</h2>
+                <p>Let's discuss how our intelligence-driven strategies can unlock your brand's full potential.</p>
+                <a href="#contact-page-section" class="btn btn-primary btn-large">Schedule a Free Consultation</a>
+            </div>
+        </section>
+
+        <!-- Job Vacancy Preview Section (Home Page) -->
+        <section class="job-vacancy-preview-section">
+            <div class="container text-center">
+                <h2 class="animate-on-scroll">Join Our Growing Team</h2>
+                <p class="section-description animate-on-scroll animate-delay-1">We're looking for passionate individuals to drive the future of digital marketing.</p>
+                <div class="job-cards-grid">
+                    <div class="job-card animate-on-scroll animate-delay-2">
+                        <h3>Senior Project Manager</h3>
+                        <p class="job-details"><i class="fas fa-briefcase"></i> Experience: 2+ Years</p>
+                        <p class="job-details"><i class="fas fa-map-marker-alt"></i> Location: Chennai, India</p>
+                        <a href="#job-vacancy-page-section" class="btn btn-primary">View Details</a>
+                    </div>
+                    <div class="job-card animate-on-scroll animate-delay-3">
+                        <h3>Digital Marketing Specialist</h3>
+                        <p class="job-details"><i class="fas fa-briefcase"></i> Experience: 1-3 Years</p>
+                        <p class="job-details"><i class="fas fa-map-marker-alt"></i> Location: Remote / Chennai</p>
+                        <a href="#job-vacancy-page-section" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="text-center mt-8 animate-on-scroll">
+                    <a href="#job-vacancy-page-section" class="btn btn-outline btn-large">View All Openings</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 2. Services Page Content -->
+        <section class="page-hero-section" id="services-page-section">
+            <div class="container">
+                <h1 class="fade-in-up animate-delay-1">Our Comprehensive Services</h1>
+                <p class="fade-in-up animate-delay-2">From strategy to execution, we cover every aspect of your digital marketing journey.</p>
+            </div>
+        </section>
+
+        <section class="services-detail-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Consulting & Advisory</h2>
+                <div class="service-detail-item animate-on-scroll animate-delay-1">
+                    <p>Leverage our deep expertise in Data & AI strategy, MarTech rearchitecture, and experience reinvention to define your digital roadmap. We provide actionable insights and strategic guidance to unlock new growth opportunities.</p>
+                    <ul>
+                        <li>Data & AI Strategy Development</li>
+                        <li>MarTech Stack Audit & Optimization</li>
+                        <li>Customer Experience (CX) Design</li>
+                        <li>Digital Transformation Roadmapping</li>
+                    </ul>
+                </div>
+
+                <h2 class="animate-on-scroll mt-8">Enablement Solutions</h2>
+                <div class="service-detail-item animate-on-scroll animate-delay-2">
+                    <p>Build robust foundations for your digital success. We specialize in seamless technology integrations, developing cutting-edge digital, mobile, and web3 applications, and establishing efficient Standard Operating Procedures (SOPs).</p>
+                    <ul>
+                        <li>Marketing Cloud Integration (Adobe, Salesforce, etc.)</li>
+                        <li>Custom Digital & Mobile App Development</li>
+                        <li>Web3 Strategy & Blockchain Integration</li>
+                        <li>Workflow Automation & SOP Implementation</li>
+                    </ul>
+                </div>
+
+                <h2 class="animate-on-scroll mt-8">Operations & Augmentation</h2>
+                <div class="service-detail-item animate-on-scroll animate-delay-3">
+                    <p>Enhance your internal capabilities by augmenting your teams with our specialized digital marketing experts. We provide scalable operational support to drive efficiency and achieve your marketing goals without the overhead.</p>
+                    <ul>
+                        <li>SEO & Content Marketing Operations</li>
+                        <li>Paid Media (PPC, Social Ads) Management</li>
+                        <li>Email Marketing & CRM Execution</li>
+                        <li>Analytics & Reporting Support</li>
+                    </ul>
+                </div>
+
+                <h2 class="animate-on-scroll mt-8">Managed Services</h2>
+                <div class="service-detail-item animate-on-scroll animate-delay-4">
+                    <p>For a truly hands-off approach, our managed services offer end-to-end planning, architecture, enablement, and daily operations for all your digital marketing priorities. We act as an extension of your team, dedicated to your growth.</p>
+                    <ul>
+                        <li>Full-Funnel Digital Campaign Management</li>
+                        <li>Customer Journey Optimization</li>
+                        <li>Performance Marketing & ROI Tracking</li>
+                        <li>Comprehensive Digital Strategy Execution</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Elevate Your Digital Presence?</h2>
+                <p>Let's discuss how our tailored services can drive measurable results for your business.</p>
+                <a href="#contact-page-section" class="btn btn-primary btn-large">Request a Consultation</a>
+            </div>
+        </section>
+
+
+        <!-- 3. Insights Page Content -->
+        <section class="page-hero-section" id="insights-page-section">
+            <div class="container">
+                <h1 class="fade-in-up animate-delay-1">Latest Insights & Xtelligence</h1>
+                <p class="fade-in-up animate-delay-2">Stay updated with our thought leadership, industry trends, and expert analyses.</p>
+            </div>
+        </section>
+
+        <section class="insights-list-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Dive Deeper into Digital Marketing</h2>
+                <div class="insight-cards-grid">
+                    <!-- Insight Card 1 (from index.html) -->
+                    <div class="insight-card animate-on-scroll animate-delay-1">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/ai-marketing.jpg" alt="AI in Marketing"> -->
+                        <div class="card-content">
+                            <span>Marketing Automation</span>
+                            <h3>The Future of AI in Digital Marketing 2025</h3>
+                            <p>Explore how artificial intelligence is reshaping campaigns and customer journeys.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Insight Card 2 (from index.html) -->
+                    <div class="insight-card animate-on-scroll animate-delay-2">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/headless-cms.jpg" alt="Headless CMS"> -->
+                        <div class="card-content">
+                            <span>MarTech</span>
+                            <h3>Headless CMS: The Power Behind Modern Websites</h3>
+                            <p>Understand why headless architectures are critical for scalable digital experiences.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Add more Insight Cards here as needed -->
+                    <div class="insight-card animate-on-scroll animate-delay-3">
+                        <!-- <img src="assets/images/data-privacy.jpg" alt="Data Privacy"> -->
+                        <div class="card-content">
+                            <span>Data & Analytics</span>
+                            <h3>Navigating the New Era of Data Privacy</h3>
+                            <p>Strategies for respecting user privacy while maximizing data utility in marketing.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="insight-card animate-on-scroll animate-delay-4">
+                        <!-- <img src="assets/images/social-commerce.jpg" alt="Social Commerce"> -->
+                        <div class="card-content">
+                            <span>E-commerce</span>
+                            <h3>The Rise of Social Commerce: What You Need to Know</h3>
+                            <p>How social media platforms are transforming the online shopping experience.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Don't Miss Out on Key Marketing Updates</h2>
+                <p>Subscribe to our newsletter for the latest insights directly in your inbox.</p>
+                <a href="#" class="btn btn-primary btn-large">Subscribe Now</a>
+            </div>
+        </section>
+
+
+        <!-- 4. Case Studies Page Content -->
+        <section class="page-hero-section" id="case-studies-page-section">
+            <div class="container">
+                <h1 class="fade-in-up animate-delay-1">Our Success Stories</h1>
+                <p class="fade-in-up animate-delay-2">See how we've helped leading brands achieve exceptional results across industries.</p>
+            </div>
+        </section>
+
+        <section class="case-studies-list-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Real Results, Real Impact</h2>
+                <div class="case-study-cards-grid">
+                    <!-- Case Study 1 (from index.html) -->
+                    <div class="case-study-card animate-on-scroll animate-delay-1">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/case-study-auto.jpg" alt="Automotive Case Study"> -->
+                        <div class="card-content">
+                            <h3>Automotive Giant Drives 30% ROAS Increase</h3>
+                            <p>Implemented an intelligent performance marketing strategy, leading to significant returns on ad spend and increased vehicle sales.</p>
+                            <a href="#" class="read-more">View Case Study <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 (from index.html) -->
+                    <div class="case-study-card animate-on-scroll animate-delay-2">
+                        <!-- Add an image here if you have one, e.g., <img src="assets/images/case-study-health.jpg" alt="Healthcare Case Study"> -->
+                        <div class="card-content">
+                            <h3>Healthcare Provider Boosts Patient Engagement by 25%</h3>
+                            <p>Reinvented patient experience through a unified digital presence and personalized communication campaigns across channels.</p>
+                            <a href="#" class="read-more">View Case Study <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Add more Case Study Cards here as needed -->
+                    <div class="case-study-card animate-on-scroll animate-delay-3">
+                        <!-- <img src="assets/images/case-study-finance.jpg" alt="Finance Case Study"> -->
+                        <div class="card-content">
+                            <h3>Financial Services Firm Achieves 15% Lead Conversion Growth</h3>
+                            <p>Optimized customer journeys and implemented data-driven segmentation, leading to higher quality leads and improved conversion rates.</p>
+                            <a href="#" class="read-more">View Case Study <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card animate-on-scroll animate-delay-4">
+                        <!-- <img src="assets/images/case-study-retail.jpg" alt="Retail Case Study"> -->
+                        <div class="card-content">
+                            <h3>Global Retailer Sees 40% Increase in Online Sales</h3>
+                            <p>Developed a comprehensive e-commerce strategy, including SEO, paid advertising, and user experience enhancements.</p>
+                            <a href="#" class="read-more">View Case Study <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready for Your Own Success Story?</h2>
+                <p>Partner with Xerago to transform your digital marketing and achieve extraordinary results.</p>
+                <a href="#contact-page-section" class="btn btn-primary btn-large">Get a Free Consultation</a>
+            </div>
+        </section>
+
+
+        <!-- 5. Job Vacancy Page Content -->
+        <section class="page-hero-section" id="job-vacancy-page-section">
+            <div class="container">
+                <h1 class="fade-in-up animate-delay-1">Join Our Team</h1>
+                <p class="fade-in-up animate-delay-2">Explore exciting career opportunities at Xerago and grow with us.</p>
+            </div>
+        </section>
+
+        <section class="job-listings-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Current Openings</h2>
+                <div class="job-cards-grid">
+
+                    <div class="job-card animate-on-scroll animate-delay-1">
+                        <h3>Senior Project Manager</h3>
+                        <p class="job-details"><i class="fas fa-briefcase"></i> Experience: 2+ Years</p>
+                        <p class="job-details"><i class="fas fa-map-marker-alt"></i> Location: Chennai, India</p>
+                        <h4>Key Responsibilities:</h4>
+                        <ul>
+                            <li>Lead and manage end-to-end digital marketing projects.</li>
+                            <li>Develop project plans, timelines, and resource allocation.</li>
+                            <li>Ensure projects are delivered on time and within budget.</li>
+                            <li>Liaise with clients and internal teams effectively.</li>
+                        </ul>
+                        <h4>Required Skills:</h4>
+                        <ul>
+                            <li>Strong project management methodologies (Agile/Scrum).</li>
+                            <li>Excellent campaign management skills.</li>
+                            <li>Exceptional communication skills (written and verbal).</li>
+                            <li>Problem-solving and decision-making abilities.</li>
+                        </ul>
+                        <div class="job-apply">
+                            <p>Ready to make an impact? Send your resume to:</p>
+                            <a href="mailto:hr@xeragooutlook.com" class="btn btn-primary">hr@xeragooutlook.com</a>
+                        </div>
+                    </div>
+
+                    <div class="job-card animate-on-scroll animate-delay-2">
+                        <h3>Digital Marketing Specialist</h3>
+                        <p class="job-details"><i class="fas fa-briefcase"></i> Experience: 1-3 Years</p>
+                        <p class="job-details"><i class="fas fa-map-marker-alt"></i> Location: Remote / Chennai</p>
+                        <h4>Key Responsibilities:</h4>
+                        <ul>
+                            <li>Execute and optimize digital marketing campaigns (SEO, SEM, Social).</li>
+                            <li>Analyze campaign performance and report on KPIs.</li>
+                            <li>Stay updated with industry trends and best practices.</li>
+                        <li>Basic understanding of HTML/CSS for landing pages.</li>
+                        </ul>
+                        <h4>Required Skills:</h4>
+                        <ul>
+                            <li>Proficiency in Google Ads, Facebook Ads Manager.</li>
+                            <li>Strong analytical and data interpretation skills.</li>
+                            <li>Creative thinking and problem-solving.</li>
+                        </ul>
+                        <div class="job-apply">
+                            <p>Ready to make an impact? Send your resume to:</p>
+                            <a href="mailto:hr@xeragooutlook.com" class="btn btn-primary">hr@xeragooutlook.com</a>
+                        </div>
+                    </div>
+
+                    <div class="job-card animate-on-scroll animate-delay-3">
+                        <h3>UI/UX Designer</h3>
+                        <p class="job-details"><i class="fas fa-briefcase"></i> Experience: 1-3 Years</p>
+                        <p class="job-details"><i class="fas fa-map-marker-alt"></i> Location: Remote / Chennai</p>
+                        <h4>Key Responsibilities:</h4>
+                        <ul>
+                            <li>Design user-friendly interfaces for web and mobile applications.</li>
+                            <li>Conduct user research and usability testing.</li>
+                            <li>Create wireframes, prototypes, and high-fidelity mockups.</li>
+                            <li>Collaborate with development teams.</li>
+                        </ul>
+                        <h4>Required Skills:</h4>
+                        <ul>
+                            <li>Proficiency in Figma, Sketch, or Adobe XD.</li>
+                            <li>Strong understanding of user-centered design principles.</li>
+                            <li>Portfolio demonstrating design expertise.</li>
+                            <li>Attention to detail and creativity.</li>
+                        </ul>
+                        <div class="job-apply">
+                            <p>Ready to make an impact? Send your resume to:</p>
+                            <a href="mailto:hr@xeragooutlook.com" class="btn btn-primary">hr@xeragooutlook.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Don't See Your Role?</h2>
+                <p>We're always looking for passionate and talented individuals to join our growing team. Send us your resume and tell us how you can contribute!</p>
+                <a href="mailto:hr@xeragooutlook.com" class="btn btn-primary btn-large">Send Your Resume</a>
+            </div>
+        </section>
+
+
+        <!-- 6. About Us Page Content -->
+        <section class="page-hero-section" id="about-page-section">
+            <div class="container">
+                <h1 class="fade-in-up animate-delay-1">About Xerago</h1>
+                <p class="fade-in-up animate-delay-2">Driving intelligence-driven digital marketing for global brands since the early 2000s.</p>
+            </div>
+        </section>
+
+        <section class="company-story-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Our Journey & Mission</h2>
+                <div class="content-block animate-on-scroll animate-delay-1">
+                    <p>Founded in the early 2000s, Xerago emerged with a vision to revolutionize digital marketing through data and intelligence. From our headquarters in Chennai, India, we've grown to establish a global presence with offices in the United States, UAE, and Singapore.</p>
+                    <p>Our mission is to empower mid-market and enterprise brands across five continents to achieve their acquisition and conversion goals. We do this by transforming complex data into decisive, actionable strategies that drive measurable growth and unparalleled customer experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Our Core Values</h2>
+                <div class="differentiator-points-grid"> <!-- Reusing differentiator-points-grid for layout -->
+                    <div class="differentiator-item animate-on-scroll animate-delay-1">
+                        <i class="fas fa-lightbulb differentiator-icon"></i>
+                        <h3>Innovation</h3>
+                        <p>Continuously exploring new technologies and strategies to stay ahead in a dynamic digital landscape.</p>
+                    </div>
+                    <div class="differentiator-item animate-on-scroll animate-delay-2">
+                        <i class="fas fa-handshake differentiator-icon"></i>
+                        <h3>Client-Centricity</h3>
+                        <p>Building strong partnerships and delivering solutions tailored to our clients' unique goals and challenges.</p>
+                    </div>
+                    <div class="differentiator-item animate-on-scroll animate-delay-3">
+                        <i class="fas fa-chart-line differentiator-icon"></i>
+                        <h3>Results-Driven</h3>
+                        <p>Focused on delivering measurable ROI and tangible impact for every campaign and project.</p>
+                    </div>
+                    <div class="differentiator-item animate-on-scroll animate-delay-4">
+                        <i class="fas fa-users differentiator-icon"></i>
+                        <h3>Collaboration</h3>
+                        <p>Fostering a collaborative environment internally and with clients to achieve shared success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leadership-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Meet Our Leadership</h2>
+                <p class="section-description animate-on-scroll animate-delay-1">Our experienced leaders guide our mission to deliver intelligence-driven marketing solutions.</p>
+                <div class="team-cards-grid">
+                    <!-- Placeholder for team members -->
+                    <div class="team-member-card animate-on-scroll animate-delay-2">
+                        <!-- <img src="assets/images/team-member-1.jpg" alt="Team Member Name"> -->
+                        <h3>Ganesh N Mandalam</h3>
+                        <p>CEO</p>
+                        <p class="description">Visionary leader guiding Xerago's strategic direction and growth initiatives.</p>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="team-member-card animate-on-scroll animate-delay-3">
+                        <!-- <img src="assets/images/team-member-2.jpg" alt="Team Member Name"> -->
+                        <h3>Selvakumar C</h3>
+                        <p>Chief Revenue Officer</p>
+                        <p class="description">Expert in digital strategy and performance marketing, driving client success.</p>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="team-member-card animate-on-scroll animate-delay-3">
+                        <!-- <img src="assets/images/team-member-2.jpg" alt="Team Member Name"> -->
+                        <h3>Patric Charles</h3>
+                        <p>Chief Sales Officer</p>
+                        <p class="description">Expert in digital strategy and performance marketing, driving client success.</p>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <!-- Add more team members as needed -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Partner with an Industry Leader?</h2>
+                <p>Contact us today to discover how Xerago can elevate your brand's digital presence.</p>
+                <a href="#contact-page-section" class="btn btn-primary btn-large">Get in Touch</a>
+            </div>
+        </section>
+
+
+        <!-- 7. Contact Us Page Content -->
+        <section class="page-hero-section" id="contact-page-section">
+            <div class="container">
+                <h1 class="fade-in-up animate-delay-1">Get in Touch</h1>
+                <p class="fade-in-up animate-delay-2">Have a question or looking to start a project? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-info-section">
+            <div class="container">
+                <h2 class="animate-on-scroll text-center">Contact Information</h2>
+                <div class="contact-grid">
+                    <div class="contact-item animate-on-scroll animate-delay-1">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <h3>Our Main Office</h3>
+                        <p>93,Industrial estate,Perungudi ,Chennai,TamilNadu 600096 India</p>
+                    </div>
+                    <div class="contact-item animate-on-scroll animate-delay-2">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@xerago.com">info@xerago.com</a></p>
+                        <p><a href="mailto:support@xerago.com">support@xerago.com</a></p>
+                    </div>
+                    <div class="contact-item animate-on-scroll animate-delay-3">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <h3>Call Us</h3>
+                        <p>+91 98765 43210</p>
+                        <p>+1 223 456 7890 (US Office)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h2 class="animate-on-scroll text-center">Send Us a Message</h2>
+                <form action="#" method="POST" class="contact-form animate-on-scroll animate-delay-1">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 class="animate-on-scroll text-center">Find Us on the Map</h2>
+                <div class="map-placeholder animate-on-scroll animate-delay-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15549.992850937402!2d80.20815197576579!3d12.983930438670116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d80650d2449%3A0x6b8c8d8b6c4b2b2!2sPerungudi%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1718556816000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle-button" id="chatbotToggleButton" aria-label="Open chatbot">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-window" id="chatbotWindow">
+        <div class="chatbot-header">
+            <h3>Xerago Chat Support</h3>
+            <button class="chatbot-close-button" id="chatbotCloseButton" aria-label="Close chatbot">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">Hello! How can I help you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type your message...">
+            <button id="chatbotSendButton"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-col logo-col">
+                <h3 class="logo"><img src="logo.png" alt="Xerago logo"></h3>
+                <p>Driving digital marketing intelligence for global brands.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services-page-section">Services</a></li>
+                    <li><a href="#insights-page-section">Insights</a></li>
+                    <li><a href="#case-studies-page-section">Case Studies</a></li>
+                    <li><a href="#job-vacancy-page-section">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>93,Industrial estate,Perungudi ,Chennai,TamilNadu 600096 India</p>
+                <p>Email: info@xerago.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Xerago. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- === INLINE JAVASCRIPT - ALL SCRIPTS HERE === -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ------------------------------------
+            // 1. Hamburger Menu Toggle
+            // ------------------------------------
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const mainNav = document.getElementById('mainNav');
+
+            if (hamburgerMenu && mainNav) {
+                hamburgerMenu.addEventListener('click', () => {
+                    mainNav.classList.toggle('active');
+                    hamburgerMenu.querySelector('i').classList.toggle('fa-bars');
+                    hamburgerMenu.querySelector('i').classList.toggle('fa-times');
+                });
+
+                // Close menu when a nav link is clicked (important for single-page navigation)
+                mainNav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (mainNav.classList.contains('active')) {
+                            mainNav.classList.remove('active');
+                            hamburgerMenu.querySelector('i').classList.remove('fa-times');
+                            hamburgerMenu.querySelector('i').classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // ------------------------------------
+            // 2. Chatbot Functionality
+            // ------------------------------------
+            const chatbotToggleButton = document.getElementById('chatbotToggleButton');
+            const chatbotWindow = document.getElementById('chatbotWindow');
+            const chatbotCloseButton = document.getElementById('chatbotCloseButton');
+            const chatbotMessages = document.getElementById('chatbotMessages');
+            const chatbotInput = document.getElementById('chatbotInput');
+            const chatbotSendButton = document.getElementById('chatbotSendButton');
+
+            if (chatbotToggleButton && chatbotWindow && chatbotCloseButton && chatbotMessages && chatbotInput && chatbotSendButton) {
+                chatbotToggleButton.addEventListener('click', () => {
+                    chatbotWindow.classList.toggle('active');
+                    if (chatbotWindow.classList.contains('active')) {
+                        chatbotInput.focus(); // Focus input when opened
+                        chatbotMessages.scrollTop = chatbotMessages.scrollHeight; // Scroll to bottom when opening
+                    }
+                });
+
+                chatbotCloseButton.addEventListener('click', () => {
+                    chatbotWindow.classList.remove('active');
+                });
+
+                const sendMessage = () => {
+                    const userMessage = chatbotInput.value.trim();
+                    if (userMessage === '') return;
+
+                    // Display user message
+                    const userMessageDiv = document.createElement('div');
+                    userMessageDiv.classList.add('message', 'user-message');
+                    userMessageDiv.textContent = userMessage;
+                    chatbotMessages.appendChild(userMessageDiv);
+                    chatbotInput.value = ''; // Clear input
+
+                    chatbotMessages.scrollTop = chatbotMessages.scrollHeight; // Scroll to the bottom
+
+                    // Simulate bot response (This is where a real backend connection would go!)
+                    setTimeout(() => {
+                        const botMessageDiv = document.createElement('div');
+                        botMessageDiv.classList.add('message', 'bot-message');
+                        botMessageDiv.textContent = `Thank you for your message: "${userMessage}". Our team will get back to you soon!`;
+                        chatbotMessages.appendChild(botMessageDiv);
+                        chatbotMessages.scrollTop = chatbotMessages.scrollHeight; // Scroll again
+                    }, 800); // Simulate typing delay
+                };
+
+                chatbotSendButton.addEventListener('click', sendMessage);
+                chatbotInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        sendMessage();
+                    }
+                });
+            }
+
+            // ------------------------------------
+            // 3. Scroll Animations (Intersection Observer)
+            // ------------------------------------
+            const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
+            const fadeInUpElements = document.querySelectorAll('.fade-in-up');
+
+            const observerOptions = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.2 // Trigger when 20% of the element is visible
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            animateOnScrollElements.forEach(el => observer.observe(el));
+            fadeInUpElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
